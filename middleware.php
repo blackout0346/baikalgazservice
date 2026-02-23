@@ -1,11 +1,9 @@
 <?php
-header('Content-Type: application/json');
-
 
 $max_request = 3;
 $period = 60;
 $ip = $_SERVER['REMOTE_ADDR'];
-
+$secret = "ysc2_ZKbHttA4kU5VgVygKTmtzfIhDFpIagIXOu7noaSk23921fb9";
 $file_dir = sys_get_temp_dir() . '/rate_limit_cache';
 
 if(!is_dir($file_dir)) {
@@ -41,13 +39,14 @@ if(count($requests) > $max_request) {
 }
 
 
-$input = json_decode(file_get_contents('php://input'), true);
 
-$token = isset($input['token']) ? $input['token'] : (isset($_POST['smart-token']) ? $_POST['smart-token'] : null);
+
+$token = $_POST['smart-token']?? null;
 
 if (!$token) {
-    http_response_code(400);
-    echo json_encode(array('error' => 'No token provided'));
+    $input = json_decode(file_get_contents('php://input'), true);
+    $token = $input['smart-token'] ?? $input['token'] ?? null;
+   
     exit;
 }
 
@@ -65,7 +64,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($args));
 curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-
 
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);

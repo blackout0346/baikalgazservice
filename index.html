@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0021)https://baikalgaz.ru/ -->
 <html xml:lang="ru" lang="ru" class="bx-core bx-win bx-no-touch bx-no-retina bx-chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="https://smartcaptcha.cloud.yandex.ru/captcha.js" defer></script>
+<script src="https://smartcaptcha.cloud.yandex.ru/captcha.js?render=explicit" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
 <meta name="robots" content="index, follow">
@@ -142,7 +142,9 @@
 .smart-captcha_invisible{
   height:0;
 }
-</style><link rel="prefetch" as="script" href="https://smartcaptcha.yandexcloud.net/shield.a7a8aae3ab898b70eed0.chunk.js"></head>
+</style>
+
+</head>
 
 
 <body>
@@ -554,7 +556,7 @@
         <textarea id="main_message" rows="3" class="request__form-textarea"></textarea>
     </div>
     <button id="request-submit" type="button" class="request__form-button">Отправить заявку</button>
-              <input type="hidden" id="smart-token" name="smart-token" value="токен"> 
+
 </div>
 	</div>
 </div>
@@ -693,7 +695,7 @@
         
         
     
-<form id="quiz-form" class="quiz-form" method="post" enctype="multipart/form-data" action="https://baikalgaz.ru/" data-validatefields="null"><input type="hidden" name="bxajaxid" id="bxajaxid_2f8711d7a2e0e5210fb1547865ef75a7_8BACKi" value="2f8711d7a2e0e5210fb1547865ef75a7"><input type="hidden" name="AJAX_CALL" value="Y">                    <input type="hidden" name="AJAX_CALL" value="N">
+<form  id="quiz-form" class="quiz-form"  action="middleware.php" method="POST">
                 <input type="hidden" name="interlabs__feedbackform" value="Y">
         <input type="hidden" name="interlabs__feedbackform_FORM_ID" value="">
 
@@ -785,59 +787,25 @@
                        <div class="form-field" id="email-data">
                                 <label class="field-label" for="ATT_QUIZ_EMAIL"><i class="fas fa-phone"></i> Почта</label>
             <input class="field-input email-mask" type="email" id="ATT_QUIZ_EMAIL" name="ATT_QUIZ_EMAIL" value="" placeholder="Введите свою почту">
-            <input type="hidden" id="smart-token" name="smart-token" value="токен">    
+       
                         </div>
                         </div>
                     </div>
-                    <!-- <div class="step-content-contact-box">
-
-                                                    <div class="form-group agree">
-                                <div class="c-checkbox">
-                                    <input id="AGREE_PROCESSING" name="AGREE_PROCESSING" value="Y" type="checkbox" required="">
-                                    <label for="AGREE_PROCESSING">Согласен на обработку<span class="field-required">*</span></label>
-                                </div>
-
-                                                                    <div id="AGREE_PROCESSING_TEXT_dialogAGREE_PROCESSING_TEXT_dialog69804dc5f2e05" class="interlabs__info-dialog-quiz hidden">
-                                        <div class="header">
-                                            <label>Соглашение</label>
-                                            <span class="close-dialog" onclick="document.getElementById(&#39;AGREE_PROCESSING_TEXT_dialogAGREE_PROCESSING_TEXT_dialog69804dc5f2e05&#39;).className+=&#39; hidden &#39;">
-                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L17 17" stroke="#8B8989" stroke-width="2" stroke-linecap="round"></path>
-                    <path d="M1 17L17 1" stroke="#8B8989" stroke-width="2" stroke-linecap="round"></path>
-                </svg>
-                                    </span>
-                                        </div>
-                                        <div class="body">
-                                            <div class="form-group scroll-area">
-                                                Согласен на обработку персональных данных                                            </div>
-                                            <div class="form-group">
-                                                <a class="btn btn-close" onclick="document.getElementById(&#39;AGREE_PROCESSING_TEXT_dialogAGREE_PROCESSING_TEXT_dialog69804dc5f2e05&#39;).className+=&#39; hidden &#39;">Закрыть</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a onclick="document.getElementById(&#39;AGREE_PROCESSING_TEXT_dialogAGREE_PROCESSING_TEXT_dialog69804dc5f2e05&#39;).className=document.getElementById(&#39;AGREE_PROCESSING_TEXT_dialogAGREE_PROCESSING_TEXT_dialog69804dc5f2e05&#39;).className.replace(&#39;hidden&#39;,&#39;&#39;)">
-                                        Соглашение                                    </a>
-                                
-                            </div>
-                                                <div style="height: 100px" id="captcha-container-quiz" class="smart-captcha"></div>
-                    </div> -->
-
-                    <div
-                        id="captcha-container"
-                        class="smart-captcha"
-                        data-sitekey="ysc1_ZKbHttA4kU5VgVygKTmttaLkuzhaPWJR0JBhR0spc36ebe0a"
-                        style="height: 100px"
-                    ></div>
+               
+          
+            <input type="hidden" id="smart-token" name="token">  
+                   <div id="captcha-container"></div>
                     <div class="quiz-actions">
-                        <button type="button" class="quiz-button button-prev"><i class="fas fa-arrow-left"></i>Назад</button>
-                        <button type="request-submit" class="quiz-button button-submit"> <i class="fas fa-paper-plane"></i> Отправить</button>
+                        <button type="button" class="quiz-button button-prev">Назад</button>
+                        <button type="submit" class="quiz-button button-submit">Отправить</button>
                     </div>
                 </div>
+                
+          
             </div>
         </div>
-    </form>
 </div>
-
+</form>
 </div><!-- Contacts Section --> <section id="contacts" class="section">
 <div class="container">
 		<h2 class="section__title">Наши контакты</h2>
@@ -1024,7 +992,7 @@
 
 
 <script src="jquery.min.js"></script>
-<script src="https://smartcaptcha.cloud.yandex.ru/captcha.js" defer></script>
+
 <script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
 <script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script>
 <script src="./core.min.js"></script>
@@ -1278,10 +1246,14 @@ async function handleFormSubmit(params, button) {
     try {
 
         const response = await fetch('middleware.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ token: token })
-        });
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: 'token=' + encodeURIComponent(
+        document.getElementById('smart-token').value
+    )
+});
 
         if (response.status === 429) {
             alert("Слишком много запросов. Попробуйте позже.");
@@ -1453,9 +1425,27 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 emailjs.init("qJ2Iik3PBlX8O3gBV"),document.addEventListener("DOMContentLoaded",function(){async function e(e,t){let n=t.innerText;t.innerText="Отправка...",t.disabled=!0;try{await emailjs.send("service_gb0mvu9","template_ers06ol",e),alert("Заявка успешно отправлена!"),t.innerText=n,t.disabled=!1,document.querySelectorAll("input, textarea, select").forEach(e=>e.value="")}catch(l){console.error("Ошибка EmailJS:",l),alert("Ошибка при отправке. Проверьте консоль (F12)."),t.innerText="Ошибка",t.disabled=!1}}let t=document.querySelector(".button-submit");t&&t.addEventListener("click",function(n){try{n.preventDefault(),priceToFloors=1e3,priceToArea=5e3;let l=document.getElementById("ATT_QUIZ_FIO")?.value,r=document.getElementById("ATT_QUIZ_PHONE")?.value,a=document.getElementById("ATT_QUIZ_EMAIL")?.value,i=document.getElementById("ATT_QUIZ_TYPE")?.value||"не указан",u=document.getElementById("ATT_QUIZ_S")?.value||"не указана",d=document.getElementById("ATT_QUIZ_FLOORS")?.value||"не указано";if(!l||!r){alert("Пожалуйста, заполните контакты в квизе");return}if(!r||r.length<11){alert("Пожалуйста, введите корректный номер телефона");return}if(!emailRegex.test(a)){alert("Пожалуйста, введите корректный email");return}let T={name:l,phone:r,email:a||"не указан",service:"Расчет стоимости (Квиз)",message:`Тип объекта: ${i}, Площадь: ${u}, Этажность: ${d}
  Примерная стоимость: ${u*priceToArea+d*priceToFloors} руб.`};e(T,t)}catch(c){console.error("Ошибка при отправке квиза:",c),alert("Произошла ошибка при отправке квиза. Проверьте консоль (F12).")}})});
+
+
 </script>
 <script>
-function initCaptcha(){document.getElementById("captcha-container")&&(window.smartCaptcha?window.smartCaptcha.render("captcha-container",{sitekey:"ysc1_ZKbHttA4kU5VgVygKTmttaLkuzhaPWJR0JBhR0spc36ebe0a",callback:function(t){let a=document.querySelector('input[name="smart-token"]');a&&(a.value=t)}}):setTimeout(initCaptcha,100))}initCaptcha();
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.smartCaptcha) {
+        try {
+            window.smartCaptcha.render('captcha-container', {
+                sitekey: 'ysc1_ZKbHttA4kU5VgVygKTmttaLkuzhaPWJR0JBhR0spc36ebe0a',
+                callback: function(token) {
+                    document.getElementById('smart-token').value = token;
+                }
+            });
+        } catch(e) {
+            console.error("Ошибка рендера:", e);
+        }
+    } else {
+        console.error("SmartCaptcha не загрузилась");
+    }
+});
+console.log(window.smartCaptcha)
 </script>
 </body>
 </html>
