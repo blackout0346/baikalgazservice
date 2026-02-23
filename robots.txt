@@ -1,0 +1,3 @@
+Sitemap: http://smiranp9.beget.tech/sitemap.xml
+User-agent: *
+Allow: 

@@ -1,0 +1,20 @@
+.title-container {
+  
+    color: #ffffff;
+	text-decoration: none;
+    padding: 50px;
+    background: #1e3a8a;
+    gap: 30px;
+    border-radius: 10px;
+    
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #f0f4f8;
+    border-radius: 10px;
+    border: 2px solid #1e3a8a;
+
+}

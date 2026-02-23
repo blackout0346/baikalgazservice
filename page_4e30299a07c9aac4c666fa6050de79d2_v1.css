@@ -1,0 +1,718 @@
+
+
+/* Start:/local/templates/main/components/bitrix/news/services/bitrix/news.list/.default/style.css?1752820146294*/
+.services-news-list {
+	margin: 60px 0;
+}
+
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+.service-card__title-link:hover {
+	opacity: .8;
+}
+
+.service-card__title {
+	transition: color 0.3s;
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/bitrix/news.list/about/style.css?1752483017150*/
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/bitrix/news/objects/bitrix/news.list/.default/style.css?17526564071311*/
+.objects-news-list {
+	margin: 80px 0;
+}
+
+.objects-main > .objects-news-list {
+	margin: 0;
+}
+
+.objects-news-list-title {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: #1e3a8a;
+	text-align: center;
+}
+
+.objects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.object-card {
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.object-card:hover {
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	transform: translateY(-5px);
+}
+
+.object-image-wrapper {
+	height: 250px;
+	overflow: hidden;
+}
+
+.object-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+
+
+.object-content {
+	padding: 20px;
+}
+
+.object-date {
+	color: #777;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.object-title {
+	margin: 0 0 15px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.object-title a {
+	color: #1e3a8a;
+	text-decoration: none;
+}
+
+.object-title a:hover {
+	opacity: .7;
+}
+
+.object-preview {
+	color: #555;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.objects-pager {
+	text-align: center;
+	margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+	.objects-grid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	}
+
+	.object-image-wrapper {
+		height: 200px;
+	}
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/bitrix/news.list/advantages-main/style.css?1752478703150*/
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/bitrix/news.list/licenses/style.css?1752481309150*/
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/bitrix/news.list/FAQ/style.css?1752552693150*/
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+/* End */
+
+
+/* Start:/local/templates/main/components/interlabs/feedbackform/quiz/style.css?17537756467989*/
+.quiz-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.quiz-header {
+  background: #1d4ed8;
+  color: white;
+  padding: 25px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.quiz-header::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.quiz-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.quiz-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+.quiz-progress-container {
+  padding: 25px 40px 45px;
+  background: #f8f9fc;
+}
+
+.quiz-progress {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 100px;
+}
+
+.quiz-progress::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #e0e0e0;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.quiz-progress-step {
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+
+.quiz-progress-step--active {
+  background: #3498db;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.quiz-progress-step--completed {
+  background: #2ecc71;
+  color: white;
+}
+
+.quiz-progress-label {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  white-space: nowrap;
+  color: #777;
+  font-weight: 500;
+}
+
+.quiz-content {
+  padding: 40px;
+  min-height: 450px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.quiz-steps {
+  position: relative;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.quiz-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(50px);
+  visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.quiz-step--active {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.step-content {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.step-content-contact-box {
+  display: flex;
+  justify-content: space-between;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.step-title {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.step-description {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-field {
+  flex: 1;
+  min-width: 100px;
+}
+.quiz-button{
+  max-width: auto;
+  max-height: auto;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.form-field i {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.field-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e0e3eb;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.field-input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+}
+
+.field-input.error {
+  border-color: #e74c3c;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.quiz-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 0;
+  margin-top: auto;
+}
+
+.quiz-button {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-button > .fa-arrow-right {
+  margin-left: 8px;
+}
+
+.quiz-button > .fa-arrow-left {
+  margin-right: 8px;
+}
+
+.quiz-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.quiz-button:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-prev {
+  background: #f8f9fc;
+  color: #7f8c8d;
+}
+
+.button-prev:not(:disabled):hover {
+  background: #eef2f7;
+  color: #3498db;
+}
+
+.button-next {
+  background: #3498db;
+  color: white;
+  box-shadow: 0 5px 20px rgba(52, 152, 219, 0.4);
+}
+
+.button-next:not(:disabled):hover {
+  background: #2980b9;
+}
+
+.button-submit {
+  background: #27ae60;
+  box-shadow: 0 5px 20px rgba(39, 174, 96, 0.4);
+  color: #fff;
+}
+
+.button-submit:not(:disabled):hover {
+  background: #219653;
+}
+
+.button-hidden {
+  visibility: hidden;
+}
+
+.quiz-footer {
+  text-align: center;
+  padding: 20px;
+  color: #7f8c8d;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  background: #f8f9fc;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-step--active .step-title {
+  animation: fadeIn 0.5s ease 0.2s both;
+}
+
+.quiz-step--active .step-description {
+  animation: fadeIn 0.6s ease 0.3s both;
+}
+
+.quiz-step--active .fields-container {
+  animation: fadeIn 0.7s ease 0.4s both;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .quiz-progress {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-progress {
+    margin: 0;
+  }
+
+  .quiz-content {
+    padding: 25px 15px;
+    max-height: 400px;
+    overflow-y: auto !important;
+    overflow: hidden;
+    scrollbar-width: thin;
+    max-height:400px;
+ 
+  }
+
+  .fields-container {
+    gap: 15px;
+  }
+
+  .form-field {
+    min-width: 50%;
+  }
+  .step-content-contact-box{
+    display: flex;
+    min-width: 100%;
+    max-height: 200%;
+    flex-direction: column;
+ 
+  }
+  .quiz-button {
+    padding: 14px 25px;
+    min-width: 200px;
+    font-size: 16px;
+  }
+
+  .quiz-title {
+    font-size: 26px;
+  }
+
+  .step-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quiz-actions {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    align-items: center;
+  }
+
+  .quiz-button {
+    width: 100%;
+  }
+
+  .quiz-progress-step {
+    width: 30px;
+    height: 300px;
+    font-size: 16px;
+  }
+
+  .quiz-progress-label {
+    font-size: 12px;
+  }
+}
+
+
+/* Диалоговое окно с текстом соглашения */
+.interlabs__info-dialog-quiz {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 600px;
+  width: 90%;
+}
+
+.interlabs__info-dialog-quiz .header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interlabs__info-dialog-quiz .header label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.interlabs__info-dialog-quiz .close-dialog {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.interlabs__info-dialog-quiz .body {
+  padding: 20px;
+}
+
+.scroll-area {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.btn-close {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.interlabs__info-dialog-quiz.hidden {
+  display: none;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.captcha img {
+  border-radius: 8px;
+}
+
+.c-checkbox, .c-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.c-checkbox input, .c-radio input {
+  width: 20px;
+  height: 20px;
+}
+
+.interlabs-feedbackform__container__errors {
+  background: #fee;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #f99;
+}
+
+.interlabs-feedbackform__container__errors__item {
+  display: block;
+  color: #e74c3c;
+  margin-bottom: 5px;
+}
+
+.interlabs-feedbackform__container__errors__item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* End */
+/* /local/templates/main/components/bitrix/news/services/bitrix/news.list/.default/style.css?1752820146294 */
+/* /local/templates/main/components/bitrix/news.list/about/style.css?1752483017150 */
+/* /local/templates/main/components/bitrix/news/objects/bitrix/news.list/.default/style.css?17526564071311 */
+/* /local/templates/main/components/bitrix/news.list/advantages-main/style.css?1752478703150 */
+/* /local/templates/main/components/bitrix/news.list/licenses/style.css?1752481309150 */
+/* /local/templates/main/components/bitrix/news.list/FAQ/style.css?1752552693150 */
+/* /local/templates/main/components/interlabs/feedbackform/quiz/style.css?17537756467989 */

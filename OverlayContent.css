@@ -1,0 +1,152 @@
+   .overlay {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 400px;
+            max-width: 90%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            z-index: 999;
+            transition: right 0.3s ease;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        .overlay.active {
+            right: 0;
+        }
+
+        .overlay-content {
+            padding: 30px;
+            position: relative;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .overlay-content-title {
+            text-align: center;
+        }
+
+        .overlay-content-title > h2 {
+            font-size: 25px;
+        }
+
+        .overlay-content-title > p {
+            font-size: 18px;
+        }
+/*contact-info*/
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: auto;
+
+  border-radius: 10%;
+
+  
+}
+.Sos-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e0e3eb;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.Sos-input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
+}
+
+.Sos-input.error {
+  border-color: #e74c3c;
+  animation: shake 0.5s;
+}
+.sos-button-submit {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  color : white;
+}
+
+    /* Блок: Floating */
+.floating-button {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 555;
+        width: 56px;
+        height: 56px;
+        background-color: #1e3a8a;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+        .floating-button:hover {
+            background-color: #ca454d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-button:active {
+            transform: translateY(0);
+        }
+
+        .floating-button i {
+            font-size: 24px;
+        }
+
+        .floating-tooltip {
+            position: absolute;
+            right: 70px;
+            background-color: #1f2937;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            pointer-events: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-tooltip::after {
+            content: "";
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #1f2937;
+        }
+
+        .floating-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            right: 65px;
+        }
+        .floating-button.pulse {
+            animation: pulse 1.5s ease-in-out;
+        }
