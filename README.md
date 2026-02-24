@@ -21,7 +21,7 @@ emailjs.send("serviceID","Template ID",e)
 ## YandexSmartCaptcha
 внутри php содержит секретный ключ от яндекс капчи
 ```
-$secret = "Сервис ключ";
+$secret = "Сервис ключ"; //находиися в middleware.php
 ```
 ```
 <form  id="quiz-form" class="quiz-form"  action="middleware.php" method="POST">
