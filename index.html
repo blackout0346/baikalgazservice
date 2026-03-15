@@ -1265,7 +1265,7 @@ async function handleFormSubmit(params, button) {
         if (result.status === 'ok') {
       
             button.innerText = 'Отправка...';
-            await emailjs.send('service_gb0mvu9', 'template_ers06ol', params);
+            await emailjs.send('EMAILJSTOKEN', 'tEMAILJTEMPLATE', params);
             alert('Заявка успешно отправлена!');
             window.smartCaptcha.reset(); 
         } else {
@@ -1349,8 +1349,8 @@ async function handleFormSubmit(params, button) {
 <script>
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
-const TELEGRAM_BOT_TOKEN = '8599556396:AAHllXZgtW2t2qo0KHvHOs6tEgh_IiOgKck';
-const TELEGRAM_CHAT_ID = '5181361382';
+const TELEGRAM_BOT_TOKEN = 'TOKEN';
+const TELEGRAM_CHAT_ID = 'CHAT';
 
 document.addEventListener('DOMContentLoaded', function() {
     const mainSubmitBtn = document.getElementById('request-submit');
