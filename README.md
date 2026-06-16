@@ -1,4 +1,8 @@
 <img width="1920" height="8903" alt="screencapture-127-0-0-1-5500-index-html-2026-06-17-02_37_17" src="https://github.com/user-attachments/assets/48d4eb53-efb8-461a-91f6-deb0d475fb30" />
+
+
+
+
 Сайт открытый
 http://smiranp9.beget.tech/
 ## Особенности сайта
